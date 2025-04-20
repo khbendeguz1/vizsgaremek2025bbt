@@ -1,0 +1,110 @@
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* HERO SZEKCIÓ */
+.hero {
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autoszektor.hu%2Fhu%2Fcontent%2Ftudja-milyen-adatok-vannak-vezetoi-engedelyen&psig=AOvVaw01Cgs4sa6NDgt5-_pptkR5&ust=1740831341706000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOC06qCs5osDFQAAAAAdAAAAABAE') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #d4af37;
+    border-color: #d4af37;
+}
+
+.btn-danger:hover {
+    background-color: #b22222;
+}
+.autokinfo{
+            color: red;
+        }
+.sikeres{
+	font-size: 2.5rem;
+    font-weight: bold;
+    color: #c49b63;
+    margin-bottom: 30px;
+
+}
+
+/* AUTÓ KATEGÓRIÁK */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c49b63;
+    margin-bottom: 30px;
+}
+
+.category-card {
+    transition: 0.3s;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+}
+
+/* LÁBLÉC */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
+/* ANIMÁCIÓK */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
